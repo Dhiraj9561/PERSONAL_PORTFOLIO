@@ -5,57 +5,229 @@
   src: local("Agustina Regular"),
     url("./assets/fonts/Agustina.woff") format("woff");
 }
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
 }
+
 @font-face {
   font-family: "Google Sans Bold";
   src: local("Google Sans Bold"),
     url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
 }
+
 @font-face {
   font-family: "Google Sans Bold Italic";
   src: local("Google Sans Bold Italic"),
     url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("woff");
 }
+
 @font-face {
   font-family: "Google Sans Italic";
   src: local("Google Sans Italic"),
     url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
 }
+
 @font-face {
   font-family: "Google Sans Medium";
   src: local("Google Sans Medium"),
     url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
 }
+
 @font-face {
   font-family: "Google Sans Medium Italic";
   src: local("Google Sans Medium Italic"),
     url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
 }
+
 @font-face {
   font-family: "Google Sans Regular";
   src: local("Google Sans Regular"),
     url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+
+/* =========================================
+   GLOBAL RESET
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-html,
-body {
+
+html {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 body {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   margin: 0;
+  padding: 0;
+
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+
+  overflow-x: hidden;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Media Query */
+
+
+/* =========================================
+   ROOT
+   ========================================= */
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   CODE
+   ========================================= */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+
+
+/* =========================================
+   COMMON ELEMENTS
+   ========================================= */
+
+img,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+
+/* =========================================
+   EXISTING TEMPLATE CLASSES
+   ========================================= */
+
+.heading {
+  color: black;
+}
+
+.subTitle {
+  color: #868e96;
+}
+
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+
+@keyframes fade_down {
+  0% {
+    opacity: 0.01;
+    transform: translateY(-20px);
+    transition:
+      opacity 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      ),
+      transform 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      );
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    transition:
+      opacity 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      ),
+      transform 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      );
+  }
+}
+
+
+@keyframes fade_up {
+  0% {
+    opacity: 0.01;
+    transform: translateY(20px);
+    transition:
+      opacity 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      ),
+      transform 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      );
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    transition:
+      opacity 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      ),
+      transform 300ms cubic-bezier(
+        0.645,
+        0.045,
+        0.355,
+        1
+      );
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE FONT
+   ========================================= */
+
 @media (max-width: 1380px) {
   html,
   body {
@@ -64,10 +236,34 @@ body {
   }
 }
 
-:root {
-  --scrollbar-color: white; /* it will change when the page loads*/
+
+/* =========================================
+   MOBILE GLOBAL FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
 }
+
+
+/* =========================================
+   SCROLLBAR
+   ========================================= */
+
+:root {
+  --scrollbar-color: white;
+}
+
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-color) transparent;
+  scrollbar-color:
+    var(--scrollbar-color)
+    transparent;
 }

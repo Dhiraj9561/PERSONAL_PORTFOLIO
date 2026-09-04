@@ -1,117 +1,627 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* =========================================
+   PROJECT PAGE
+   ========================================= */
+
 .projects-main {
   width: 100%;
-  text-align: center;
 }
 
-.basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
+
+/* =========================================
+   PROJECT TITLE
+   ========================================= */
+
+.project-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
 }
 
-.projects-heading-div {
+
+/* =========================================
+   FEATURED PROJECTS
+   ========================================= */
+
+.featured-projects-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 90px auto;
+}
+
+.featured-projects-description {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 850px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+
+/* =========================================
+   FEATURED PROJECT GRID
+   ========================================= */
+
+.featured-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+
+/* =========================================
+   FEATURED PROJECT CARD
+   ========================================= */
+
+.featured-project-card {
+  padding: 30px;
+
+  min-height: 290px;
+
+  border-radius: 16px;
+
+  border: 1px solid rgba(127, 127, 127, 0.25);
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
   display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
 }
 
-.projects-heading-div > * {
-  flex: 1;
+.featured-project-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-.projects-heading-img-div {
+
+/* =========================================
+   FEATURED PROJECT HEADER
+   ========================================= */
+
+.featured-project-header {
   display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 20px;
+}
+
+.featured-project-icon {
+  width: 60px;
+  height: 60px;
+
+  min-width: 60px;
+
+  border-radius: 14px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+
+  background: rgba(127, 127, 127, 0.12);
+}
+
+.featured-project-header h2 {
+  margin: 0;
+
+  font-size: 25px;
+
+  font-weight: 600;
+}
+
+.featured-project-header h3 {
+  margin: 5px 0 0;
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  opacity: 0.75;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.featured-project-description {
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================
+   TECHNOLOGIES
+   ========================================= */
+
+.technology-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: auto;
+}
+
+.technology-tag {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  border: 1px solid;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  background: rgba(127, 127, 127, 0.08);
+}
+
+
+/* =========================================
+   PROJECT FOOTER
+   ========================================= */
+
+.featured-project-footer {
+  margin-top: 22px;
+
+  padding-top: 14px;
+
+  border-top: 1px solid;
+}
+
+.project-status {
+  font-size: 13px;
+
+  font-weight: 500;
+
+  opacity: 0.7;
+}
+
+
+/* =========================================
+   GITHUB PROJECTS
+   ========================================= */
+
+.github-projects-section {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto 80px auto;
+}
+
+.github-projects-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 25px;
+
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   GITHUB CARD
+   ========================================= */
+
+.github-project-card {
+  padding: 25px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(127, 127, 127, 0.25);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  box-sizing: border-box;
+}
+
+.github-project-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   GITHUB HEADER
+   ========================================= */
+
+.github-project-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 15px;
+}
+
+.github-icon {
+  display: flex;
+
   align-items: center;
   justify-content: center;
 }
 
-.projects-heading-text-div {
-  text-align: center;
-}
+.github-project-top h2 {
+  margin: 0;
 
-.projects-heading-img-div > * {
-  max-width: 100%;
-  height: auto;
-}
+  font-size: 21px;
 
-.projects-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
-}
-
-.projects-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.projects-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
-}
-.publications-heading-text-div {
-  text-align: center;
-  font-family: "Google Sans Regular";
-  margin-top: 70px;
-}
-
-.publications-heading-text {
-  font-size: 56px;
   font-weight: 600;
-}
-.repo-cards-div-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem 1rem;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 60px;
+
+  word-break: break-word;
 }
 
-@media (max-width: 1380px) {
-  .projects-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .projects-heading-sub-text {
-    font-size: 25px;
-  }
+
+/* =========================================
+   GITHUB DESCRIPTION
+   ========================================= */
+
+.github-project-description {
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  min-height: 48px;
+
+  margin-bottom: 20px;
 }
+
+
+/* =========================================
+   GITHUB INFORMATION
+   ========================================= */
+
+.github-project-info {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid rgba(127, 127, 127, 0.2);
+
+  font-size: 13px;
+}
+
+.github-project-info span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.language-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  display: inline-block;
+}
+
+
+/* =========================================
+   GITHUB BUTTON
+   ========================================= */
+
+.github-button-container {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 40px;
+}
+
+.github-loading {
+  text-align: center;
+
+  padding: 30px;
+
+  font-size: 16px;
+}
+
+
+/* =========================================
+   PUBLICATIONS
+   ========================================= */
+
+.publications-section {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .featured-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .github-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
 
 @media (max-width: 768px) {
-  .projects-heading-text,
-  .publications-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
-  }
 
-  .projects-heading-sub-text {
-    font-size: 20px;
-  }
+  .project-title {
+    font-size: 32px;
 
-  .projects-heading-div {
-    flex-direction: column;
-  }
-
-  .projects-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-    line-height: normal;
     text-align: center;
   }
 
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
+  .featured-projects-description {
+    font-size: 16px;
+
+    text-align: center;
   }
+
+  .featured-projects-section,
+  .github-projects-section {
+    width: 92%;
+  }
+
+  .featured-project-card {
+    padding: 22px;
+
+    min-height: auto;
+  }
+
+  .featured-project-header {
+    gap: 12px;
+  }
+
+  .featured-project-icon {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    font-size: 25px;
+  }
+
+  .featured-project-header h2 {
+    font-size: 21px;
+  }
+
+  .featured-project-header h3 {
+    font-size: 14px;
+  }
+
+  .featured-project-description {
+    font-size: 15px;
+  }
+
+  .github-project-card {
+    padding: 20px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .featured-project-card {
+    padding: 18px;
+  }
+
+  .featured-project-header {
+    align-items: flex-start;
+  }
+
+  .featured-project-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    font-size: 22px;
+  }
+
+  .featured-project-header h2 {
+    font-size: 19px;
+  }
+
+  .featured-project-header h3 {
+    font-size: 13px;
+  }
+
+  .technology-tag {
+    font-size: 11px;
+
+    padding: 5px 9px;
+  }
+
+  .github-project-info {
+    gap: 10px;
+  }
+
+}
+
+
+/* =========================================
+   SPLIT SCREEN / RESPONSIVE FIX
+   ========================================= */
+
+.projects-main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent project content from becoming wider
+   than the available browser window */
+
+.basic-projects,
+.featured-projects-section,
+.github-projects-section,
+.publications-section {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Header responsiveness */
+
+.projects-heading-div {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Featured projects */
+
+.featured-projects-grid {
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* GitHub projects */
+
+.github-projects-grid {
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* =========================================
+   SPLIT WINDOW
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+  .projects-heading-div {
+    width: 92%;
+  }
+
+  .featured-projects-section,
+  .github-projects-section,
+  .publications-section {
+    width: 92%;
+  }
+
+  .featured-projects-grid,
+  .github-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   SMALL SPLIT WINDOW / TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .projects-heading-div {
+    width: 94%;
+  }
+
+  .featured-projects-section,
+  .github-projects-section,
+  .publications-section {
+    width: 94%;
+  }
+
+  .featured-projects-grid,
+  .github-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL WINDOW
+   ========================================= */
+
+@media (max-width: 500px) {
+
+  .projects-heading-div {
+    width: 92%;
+  }
+
+  .featured-projects-section,
+  .github-projects-section,
+  .publications-section {
+    width: 92%;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
 }

@@ -24,8 +24,8 @@
 <p align="center">If you want to discuss about something, you can ask on my <a href="https://discord.com/invite/GkcbM5bwZr">Discord Server</a>.</p>
 
 <p align="center"> 
-    <a href="https://ashutosh1919.github.io" target="_blank">
-    <img src="images/masterPortfolioThemes.png"></img>
+    <a href=" link" target="_blank">
+    <img src="images/DhirajPortfolioThemes.png"></img>
   </a>
 </p>
 
