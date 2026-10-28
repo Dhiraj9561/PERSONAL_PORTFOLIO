@@ -239,19 +239,9 @@ If you are stuck somewhere and want to observe the deployment process in depth, 
 - [react-reveal](https://www.react-reveal.com/)
 - [styled-components](https://styled-components.com/)
 
-# illustrations 🍥
-
-- [UnDraw](https://undraw.co/illustrations)
-
-# License 📄
 
 
 
-# Contributors ✨
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
 
 
 <!-- markdownlint-restore -->
