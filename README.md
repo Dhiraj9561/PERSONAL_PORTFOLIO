@@ -1,30 +1,22 @@
-<p align="center"> 
-    <img src="images/masterportfolio-banner-light.png" align="center" height="150"></img>
-</p>
-
-<h1 align="center"> Full stack Developer Master Portfolio 🔥 </h1> 
-<h3 align="center"> A clean, beautiful, responsive, and 100% customizable portfolio <br /> template for Full Stack Developers! </h3>
+<h1 align="center"> Dhiraj Rathod | Portfolio </h1> 
+<h3 align="center"> Computer Science student focused on software development, web development, and real-world applications. </h3>
 
 <p align="center">
-  <a href="http://hits.dwyl.com/ashutosh1919/masterPortfolio"><img alt="HitCounts" src="http://hits.dwyl.com/ashutosh1919/masterPortfolio.svg" /></a>
   <a href="https://nodejs.org/en/blog/release/v20.11.1"><img alt="NodeJS" src="https://img.shields.io/badge/node-20.11.1-important?style=flat-square" /></a>
   <a href="https://www.npmjs.com/package/npm/v/10.2.4"><img alt="NPM" src="https://img.shields.io/badge/npm-10.2.4-blueviolet?style=flat-square" /></a>
   <a href="https://reactjs.org/"><img alt="Made With React" src="https://img.shields.io/badge/made%20with-react-61DAFB?style=flat-square" /></a>
   <a href="https://join.slack.com/t/masterportfolio/shared_invite/zt-g772n1fo-Ns4usanURF8jVb8wk2lRAA"><img alt="Join Slack Channel For Support" src="https://img.shields.io/badge/slack-masterPortfolio-yellow.svg?logo=slack?style=flat-square" /></a>
   <a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square?style=flat-square" /></a>
   <br/>
-  <a href="https://app.netlify.com/sites/ashutosh1919portfolio/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/abf59f82-3251-4040-b24c-949b86691642/deploy-status?style=flat-square" /></a>
   <a href="https://travis-ci.org/badges/badgerbadgerbadger"><img alt="Build Status" src="http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square?style=flat-square" /></a>
   <a href="http://badges.mit-license.org/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
-  <a href="https://github.com/ashutosh1919/masterPortfolio/commits/master"><img alt="Maintenance" src="https://img.shields.io/badge/maintained-yes-green.svg?style=flat-square" /></a>
   <a href="http://badges.mit-license.org/"><img alt="Website" src="https://img.shields.io/badge/website-up-yellow?style=flat-square" /></a>
-  <a href="https://ashutoshhathidara.com/"><img alt="License" src="http://img.shields.io/:license-mit-blue.svg?style=flat-square?style=flat-square" /></a>
   <a href="https://img.shields.io/badge/price-free-ff69b4"><img alt="Price" src="https://img.shields.io/badge/price-free-ff69b4?style=flat-square" /></a>
 </p>
 
 
 <p align="center"> 
-    <a href=" link" target="_blank">
+    <a href="https://github.com/Dhiraj9561/PERSONAL_PORTFOLIO" target="_blank">
     <img src="images/DhirajPortfolioThemes.png"></img>
   </a>
 </p>
@@ -157,8 +149,8 @@ Whenever you want to update the github related information on the website you ne
 
 ### Splash Logo
 
-Note here that if you click [my portfolio](https://ashutosh1919.github.io), you can see animating the logo at the beginning. I have designed that logo in [`Figma`](https://www.figma.com/) and then animated it using css.
-Therefore, this part of portfolio is not customizable. But don't worry we have a solution to this problem. You have below two alternatives:
+The live portfolio is available at [dhiraj9561.github.io/PERSONAL_PORTFOLIO](https://dhiraj9561.github.io/PERSONAL_PORTFOLIO/).
+The splash screen is disabled in this portfolio. You can enable it in `src/portfolio.js` if you customize the loader.
 
 - If you want to design your own logo, then you can design it using `Figma` or `Adobe XD` or `Adobe Illustrator` or `Inkscape`. If you want to animate it, you can refer to `./src/components/Loader` directory which contains `js` and `css` files which animates the logo
 - If you don't want Splash screen or you don't know how to design logo, then this option is for you
@@ -178,7 +170,7 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 
 - You need to change the website title and other descriptions in `public/index.html`
 - You can define your own favicon in `public/icons` directory. If you don't have a favicon, you can generate favicons from [Favicon Generator](https://www.favicon-generator.org/) and [Favicon IO](https://favicon.io/)
-- You can also edit your website preview (known as description image). Run your site locally, take a screenshot and replace with `public/icons/desc.png`. Note that your screenshot should be 1280x640 for better preview.
+- Add a custom social preview image to `public/icons` and configure its URL in `public/index.html` when one is ready.
 
 # Choose Theme 🌈
 
@@ -190,18 +182,9 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - That's it. You just need to change the theme name and the code will take care of everything else
 - Run `npm start` to check if everything is ok.
 
-# Resume 📃
+# Resume
 
-- If you want to display your resume, go to the <a href="/src/assets/docs/">/src/assets/docs/</a> directory.
-- Paste your resume there and copy your resume's file name.
-- Also, keep in mind that your resume must be in A4 size.
-- Now, go to <a href="/src/pages/resume/Resume.js">/src/pages/resume/Resume.js</a>.
-- In the import section, find:
-```
-import myResumePdf from "../../assets/docs/Ashutosh_Hathidara_Resume_ML.pdf"
-```
-- and replace **"Ashutosh_Hathidara_Resume_ML.pdf"** with your resume file name.
-- Launch the project and go to the route `/resume` to view your resume.
+The `/resume` route currently displays a notice until Dhiraj's resume is added.
 
 # Deployment 📦
 
